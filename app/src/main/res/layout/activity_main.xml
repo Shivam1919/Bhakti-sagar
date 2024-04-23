@@ -1,18 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/bg"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="जय श्री राम"
+        android:textSize="62dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:textColor="#0E35F8"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hanumanchalisa"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/rectangle"
+        android:text="Hanuman Chalisa"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        android:textColor="#0037FF"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="40dp"
+        android:id="@+id/sundarkand"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hanumanchalisa"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="Sundarkand"
+        android:textAllCaps="false"
+        android:textSize="28dp"
+        android:textColor="#0037FF"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="40dp"
+        android:id="@+id/Ramstuti"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sundarkand"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="Shri Ram Stuti"
+        android:textSize="28dp"
+        android:textAllCaps="false"
+        android:textColor="#0037FF"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="40dp"
+        android:id="@+id/hanumanaarti"
+        android:background="@drawable/rectangle"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Ramstuti"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:text="Hanuman Aarti"
+        android:textSize="28dp"
+        android:textAllCaps="false"
+        android:textColor="#0037FF"/>
+
+</RelativeLayout>
